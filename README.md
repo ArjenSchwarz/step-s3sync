@@ -1,16 +1,17 @@
 # s3sync
 
+This step is forked from the official Wercker version in order to use a newer version of s3cmd, thereby solving several bugs present in the old s3cmd version.
+
 Synchronize a directory to a s3 bucket. It makes the bucket identical to the `source-dir`.
 Note that this means that remote files that are not in the `source-dir` are deleted.
 The synchronized files will get an public access level.
 
 It is recommended that you use application and deployment variables in wercker, so you don't include any private keys in your code.
 
-[![wercker status](https://app.wercker.com/status/2064379a8b583cd1b5da16de3faa5583/m "wercker status")](https://app.wercker.com/project/bykey/2064379a8b583cd1b5da16de3faa5583)
 
 # What's new
 
-- Always display s3cmd output
+- Update s3cmd to version 1.6.1
 
 # Options
 
@@ -79,6 +80,10 @@ It's a good idea to create a IAM user which just has enough permissions to be ab
 The MIT License (MIT)
 
 # Changelog
+
+## 2.0.4
+
+- Update s3cmd to 1.6.1
 
 ## 2.0.3
 
