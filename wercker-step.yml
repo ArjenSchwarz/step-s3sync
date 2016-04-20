@@ -1,3 +1,3 @@
-name: arjen/s3sync
+name: s3sync
 version: 2.0.4
 description: s3sync step with newer s3cmd
